@@ -1,1 +1,3 @@
-# Tessellation
+# Tessellation:
+### Algorithm1 tells the forward center, forward left and forward right neighbour on a regular hexagon tessellation scheme, supposing a hexagonal tessellation forming a regular tiling of a surface, where n being the present cell, p being the previous cell and f being the pattern width.
+### Algorithm2 tells where to move a VM for it to be as close as its moving owner as possible, while the aforesaid owner is moving around on a regular hexagonal pattern, where u being the new cell the user has just arrived, m being the present cell where its associated VM is allocated, v being the new cell the VM will move to be the closest to its owners new position, *VM is a matrix mapping cells and owners, top being the maximum capacity of VMs per cell and hops being the number of hops away between a given user and its associated VM.
