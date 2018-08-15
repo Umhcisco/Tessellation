@@ -1,0 +1,23 @@
+Algorithm1(n,p,f){
+ int vector = |n - p|;
+ int c = 0, l = 0, r = 0;
+ int abs_c = vector, abs_l = 0, abs_r = 0;
+ int sig_c = 1, sig_l = 1, sig_r = 1;
+ int values = [f-1, f, 2*f-1];    //[2,3,5] if f=3
+ int i = 0;
+ for (i=0; i<3; i++){
+  if (values[i] == vector){
+   abs_l = values[(i + 1) % 3];
+   abs_r = values[(i + 2) % 3];
+  }
+ }
+ if |abs_c – abs_l| == 1
+  sig_l = -1;
+ if |abs_c – abs_r| == 1
+  sig_r == -1;
+ if ((n – p) < 0) 
+  sig_c = -1;
+ c = n + sig_c * abs_c;
+ l = n + sig_l * sig_c * abs_l;
+ r = n + sig_r * sig_c * abs_r;
+}
